@@ -31,6 +31,32 @@ body main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+body main .bill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body main #quantity {
+  background-color: rgb(199, 204, 206);
+  height: 40px;
+  width: 300px;
+  margin: 0 auto;
+  border-color: transparent;
+  border-radius: 10px;
+}
+body main .people {
+  margin: 15px;
+}
+body main .first,
+body main .second,
+body main .third {
+  color: rgb(65, 63, 63);
+  margin: 10px;
+}
 body main .wrapper {
   width: 450px;
   background: #fff;
@@ -110,10 +136,28 @@ body main .tip {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body main .tip .amount, body main .tip .total {
+body main .tip .amount,
+body main .tip .total {
   height: 8vh;
   width: 10vh;
   margin: 10px;
+}
+body main .tip .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body main .tip .amount #tipto {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body main .tip .amount .fourth {
   color: #fff;
