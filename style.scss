@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+// MOBILKA
 body {
 	background-color: rgb(194, 217, 228);
 	font-size: 14px;
@@ -44,6 +45,7 @@ body {
 			color: rgb(65, 63, 63);
 			margin: 10px;
 		}
+		// czemu third jest najbardziej odsuniety
 		.wrapper {
 			width: 450px;
 			background: #fff;
@@ -118,8 +120,8 @@ body {
 			justify-content: center;
 			.amount,
 			.total {
-				height: 8vh;
-				width: 10vh;
+				height: 80px;
+				width: 300px;
 				margin: 10px;
 			}
 			.amount {
@@ -128,7 +130,11 @@ body {
 
 				#tipto {
 					justify-content: flex-end;
-					align-items: center;
+					align-items: flex-end;
+
+					// czemu ten element nie ustawia sie na koncu
+					height: 20px;
+					width: 50px;
 				}
 
 				.fourth {
@@ -158,6 +164,7 @@ body {
 				background-color: rgb(16, 92, 69);
 				border-color: transparent;
 				border-radius: 5px;
+				margin-bottom: 15px;
 				.box {
 					color: rgb(7, 46, 20);
 					font-weight: 300;
@@ -166,5 +173,19 @@ body {
 				}
 			}
 		}
+	}
+}
+@media (min-width: 450px) {
+	body {
+			main{
+				justify-content: center;
+				align-items: center;
+				height: 10vh;
+				width: 800px;
+				display: flex;	
+				margin:0 auto;
+				flex-direction: row;
+			}
+		
 	}
 }

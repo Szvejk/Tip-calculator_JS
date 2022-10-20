@@ -138,8 +138,8 @@ body main .tip {
 }
 body main .tip .amount,
 body main .tip .total {
-  height: 8vh;
-  width: 10vh;
+  height: 80px;
+  width: 300px;
   margin: 10px;
 }
 body main .tip .amount {
@@ -155,9 +155,11 @@ body main .tip .amount #tipto {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 20px;
+  width: 50px;
 }
 body main .tip .amount .fourth {
   color: #fff;
@@ -183,10 +185,32 @@ body main .tip .reset {
   background-color: rgb(16, 92, 69);
   border-color: transparent;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 body main .tip .reset .box {
   color: rgb(7, 46, 20);
   font-weight: 300;
   letter-spacing: 2px;
   font-weight: 800;
+}
+
+@media (min-width: 450px) {
+  body main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
