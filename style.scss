@@ -17,7 +17,7 @@ body {
 	}
 	main {
 		background-color: #fff;
-		min-height: 90vh;
+		max-height: 500px;
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
 		padding: 15px;
@@ -31,13 +31,17 @@ body {
 			background-color: rgb(199, 204, 206);
 			height: 40px;
 			width: 300px;
-			margin: 0 auto;
+			margin-right: 20px;
 			border-color: transparent;
 			border-radius: 10px;
 		}
 
+		#quantity:hover {
+			color: red;
+		}
+
 		.people {
-			margin: 15px;
+			margin-right: 20px;
 		}
 		.first,
 		.second,
@@ -47,7 +51,7 @@ body {
 		}
 		// czemu third jest najbardziej odsuniety
 		.wrapper {
-			width: 450px;
+			width: 300px;
 			background: #fff;
 			padding: 30px;
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -55,8 +59,6 @@ body {
 			.wrapper .input-data {
 				height: 40px;
 				width: 100%;
-				position: relative;
-				background-color: red;
 			}
 			.wrapper .input-data input {
 				height: 100%;
@@ -77,6 +79,7 @@ body {
 				background-color: rgb(7, 7, 61);
 				color: white;
 				font-size: 18px;
+				cursor: pointer;
 			}
 
 			.btn-1 {
@@ -165,6 +168,7 @@ body {
 				border-color: transparent;
 				border-radius: 5px;
 				margin-bottom: 15px;
+				cursor: pointer;
 				.box {
 					color: rgb(7, 46, 20);
 					font-weight: 300;
@@ -177,15 +181,29 @@ body {
 }
 @media (min-width: 450px) {
 	body {
-			main{
-				justify-content: center;
-				align-items: center;
-				height: 10vh;
-				width: 800px;
-				display: flex;	
-				margin:0 auto;
-				flex-direction: row;
-			}
 		
+		main {
+			// justify-content: center;
+			// align-items: center;
+			height: 800px;
+			width: 800px;
+			display: flex;
+			margin: 0 auto;
+			flex-direction: row;
+			// position: fixed;
+			// top: 50%;
+			// left: 50%;
+			// transform: translate(-50%, -50%);
+		}
+		.desktop {
+			width: 500px;
+		}
+		.tip {
+			margin: 20px;
+			height: 300px;
+		}
+		#quantity {
+			margin: 0;
+		}
 	}
 }
