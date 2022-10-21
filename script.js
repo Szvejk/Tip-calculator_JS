@@ -14,26 +14,34 @@ return(quantity*0,05)
     })
 
 }
+let fiveProcent = (quantity*0,05)
+
 let functionSecond = (quantity) => {
     small.addEventListener('click', () => {
         return(quantity*0,15)
     })
 }
+let fifteen = (quantity*0,15)
+
 let functionThird = (quantity) => {
     medium.addEventListener('click', () => {
         return(guantity*0,5)
     })
 }
+let fifty = (quantity*0,5)
+
 let functionFourth = (quantity) => {
     higher.addEventListener('click', ()=> {
         return(quantity*0,1)
     })
 }
+let ten = (quantity*0,1)
+
 let functionFifth = (quantity) => {
     highest.addEventListener('click', () =>{
         return(quantity*0,25)
     })
-
+    let twentyFive = (quantity*0,25)
 }
 let functionSixth = (quantity) => {
     custom.addEventListener('click',() => {
@@ -44,4 +52,8 @@ let functionSeventh = (quantity) => {
     reset.addEventListener('click',() =>{
         return("")
     })
+}
+
+const countPeople = () => {
+    console.log(fiveProcent|| fifteen ||fifty ||ten || twentyFive / )
 }

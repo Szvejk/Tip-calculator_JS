@@ -181,7 +181,6 @@ body {
 }
 @media (min-width: 450px) {
 	body {
-		
 		main {
 			// justify-content: center;
 			// align-items: center;
@@ -196,14 +195,20 @@ body {
 			// transform: translate(-50%, -50%);
 		}
 		.desktop {
-			width: 500px;
+			width: 400px;
+
+			.second {
+				margin-left: 40px;
+			}
 		}
+
 		.tip {
 			margin: 20px;
 			height: 300px;
 		}
-		#quantity {
-			margin: 0;
+		.bill,
+		.people {
+			margin-left: 40px;
 		}
 	}
 }

@@ -211,13 +211,17 @@ body main .tip .reset .box {
             flex-direction: row;
   }
   body .desktop {
-    width: 500px;
+    width: 400px;
+  }
+  body .desktop .second {
+    margin-left: 40px;
   }
   body .tip {
     margin: 20px;
     height: 300px;
   }
-  body #quantity {
-    margin: 0;
+  body .bill,
+body .people {
+    margin-left: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
